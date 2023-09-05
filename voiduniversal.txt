@@ -1,0 +1,23 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("void universal", "GrapeTheme")
+
+--Credits
+local Credits = Window:NewTab("Credits")
+local MainSection = Credits:NewSection("https://discord.gg/bYhqGjwCT6")
+local MainSection = Credits:NewSection("by spence")
+
+--Admin
+local Admin = Window:NewTab("Admin")
+local AdminSection = Admin:NewSection("FE Admin")
+AdminSection:NewButton("Infinite Yield", "Executes Infinite Yield", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+AdminSection:NewButton("CMD X", "Executes CMD X", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+
+AdminSection:NewButton("Leg V2", "Executes Leg V2", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/leg1337/legadmv2/main/legadminv2.lua", true))()
+end)
